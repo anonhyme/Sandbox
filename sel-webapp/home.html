@@ -1,0 +1,369 @@
+<!-- Base Site: http://wrapbootstrap.com -->
+<!-- Good WebSite Example:  http://wrapbootstrap.com/preview/WB0T41TX4
+                            http://wrapbootstrap.com/preview/WB0573SK0-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/selenium.css" rel="stylesheet">
+    <script>
+        function textAreaAdjust(o) {
+            o.style.width = "1px";
+            o.style.width = (25 + o.scrollWidth) + "px";
+        }
+    </script>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="js/response.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top " style="box-shadow: 0 -2 5 6 rgba(0, 0, 0, .15); border: none">
+
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <!-- data-target point to the top nav menu bar so when resolution is too small the menu collapse-->
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">Selenium Web</a>
+
+        </div>
+
+
+        <!-- Top Menu bar -->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+
+                <li class="dropdown"><a data-toggle="dropdown" href="#">Files <b class="caret"></b></a>
+                    <ul class="dropdown-menu ">
+                        <li><a tabindex="0" href="#" data-toggle="modal"
+                                                   data-target="#myModal">New Test</a></li>
+                        <li><a tabindex="1" href="#">Open...</a></li>
+                        <li><a tabindex="2" href="#">Save test...</a></li>
+                        <li><a tabindex="3" href="#">Save-as test...</a></li>
+                        <li><a tabindex="4" href="#">Paste</a></li>
+                        <!-- TODO add side menu Export test(like drop down)-->
+                        <li><a tabindex="5" href="#">Export Test...</a></li>
+                        <!-- TODO add side menu Recent test case(like drop down)-->
+                        <li><a tabindex="6" href="#">Recent test case</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="7" href="#">Add test case</a></li>
+                        <li><a tabindex="8" href="#">Properties</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="8" href="#">New Test Suite</a></li>
+                        <li><a tabindex="9" href="#">Open test suite</a></li>
+                        <li><a tabindex="10" href="#">Save test suite...</a></li>
+                        <!-- TODO add side menu export test suite as(like drop down)-->
+                        <li><a tabindex="11" href="#">Export test suite as...</a>
+                        </li>
+                        <!-- TODO add side menu recent test suite(like drop down)-->
+                        <li><a tabindex="12" href="#">Recent test suite</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="13" href="#">Export test case result...</a>
+                        </li>
+                        <li><a tabindex="14" href="#">Export test suite
+                            result...</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="15" href="#">Quit</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- test dropdown for top bar menu -->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="#"> Settings <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="0" href="#"> Annuler</a></li>
+                        <li><a tabindex="1" href="#">Retablir</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="2" href="#"> Cut</a></li>
+                        <li><a tabindex="3" href="#">Copy</a></li>
+                        <li><a tabindex="4" href="#">Paste</a></li>
+                        <li><a tabindex="5" href="#">Cut</a></li>
+                        <li><a tabindex="6" href="#">Delete</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="7" href="#">Select All</a></li>
+
+                        <li class="divider"></li>
+                        <li><a tabindex="8" href="#">Insert New Command</a></li>
+                        <li><a tabindex="8" href="#">Insert New Comment</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li><a data-toggle="dropdown" href="#"> Action <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="0" href="#">action</a></li>
+                        <li><a tabindex="1" href="#">action</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="2" href="#">action</a></li>
+                        <li><a tabindex="3" href="#">action</a></li>
+                        <li><a tabindex="4" href="#">action</a></li>
+                        <li><a tabindex="5" href="#">action</a></li>
+                        <li><a tabindex="6" href="#">action</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="7" href="#">action</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a data-toggle="dropdown" href="#"> Options <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="0" href="#">action</a></li>
+                        <li><a tabindex="1" href="#">action</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="2" href="#">action</a></li>
+                        <li><a tabindex="3" href="#">action</a></li>
+                        <li><a tabindex="4" href="#">action</a></li>
+                        <li><a tabindex="5" href="#">action</a></li>
+                        <li><a tabindex="6" href="#">action</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="7" href="#">action</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a data-toggle="dropdown" href="#"> Help <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="0" href="#">action</a></li>
+                        <li><a tabindex="1" href="#">action</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="2" href="#">action</a></li>
+                        <li><a tabindex="3" href="#">action</a></li>
+                        <li><a tabindex="4" href="#">action</a></li>
+                        <li><a tabindex="5" href="#">action</a></li>
+                        <li><a tabindex="6" href="#">action</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="7" href="#">action</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid ">
+
+    <div class="row">
+
+        <div class=" col-sm-2 col-lg-2 sidebar " style="background-color: #262626; padding-left: 10px;">
+            
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="#">Overview</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Export</a></li>
+            </ul>
+
+
+            <ul class="nav nav-sidebar ">
+                <li><a href="">Nav item</a></li>
+                <li><a href="">Nav item again</a></li>
+                <li><a href="">One more nav</a></li>
+                <li><a href="">Another nav item</a></li>
+                <li><a href="">More navigation</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h1 class="page-header">Dashboard</h1>
+
+        <h2 class="sub-header">Section title</h2>
+
+        <div class="table-responsive">
+            <table class="table table-striped">
+
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Commands</th>
+                    <th>Target</th>
+                    <th>Value</th>
+
+                </tr>
+                </thead>
+
+                <tbody >
+                <tr>
+                    <td>1</td>
+                    <td>open</td>
+                    <td>/</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>selectWindow</td>
+                    <td>null</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>clickAndWait</td>
+                    <td>link=Liste des formations</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>getEval</td>
+                    <td>page = 1;</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>storeEval</td>
+                    <td>page</td>
+                    <td>numPage</td>
+
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>echo</td>
+                    <td>${numPage</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<!-- ------------------ -->
+<!--        Modal       -->
+<!-- ------------------ -->
+
+<div class="modal fade" id="myModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">New File</h4>
+            </div>
+            <div class="modal-body">
+                <div class="divtext" contentEditable>Hello World</div>
+                <div class="input-group">
+                    <span class="input-group-addon">File Name</span>
+                    <input type="text" id="myModalInput" class="form-control" placeholder="Enter File Name">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="testAlert()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="panel-footer" style="border: 10px #000000">
+    <div class="row placeholders" style="border: 10px #000000">
+        <div class=" placeholder">
+            <img data-src="holder.js/200x200/auto/sky" class="img-responsive">
+            <span class="glyphicon glyphicon-search"></span>
+            <h4>Label</h4>
+            <span class="text-muted">Something else</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src=""></script>
+</body>
+
+</html>

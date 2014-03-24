@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/media/css/style.css" />
+<title>{% block title %}Mon blog sur les crêpes bretonnes{% endblock%}</title>
+</head>
+<body>
+	<header>Crêpes bretonnes</header>
+	
+	<nav>
+	
+		{% block nav %}
+		<ul>
+			<li><a href="/">Accueil</a></li>
+			<li><a href="/blog/bonjour">Blog</a></li>
+			<li><a href="/contact/">Contact</a></li>
+		</ul>
+		{% endblock %}
+	</nav>
+
+	<section id="content">
+		{% block content %}{% endblock %}
+	</section>
+<footer>© Crêpes bretonnes</footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{% load static %}
+<!--
+<script type="text/javascript" src="{% static 'script.js' %}"></script>
+  
+  <p>Click the button to call a function with arguments</p>
+  <p>
+    <button onclick="conversion(12)">Try it</button>
+  </p>
+  <p>
+    <button onclick="count()">start counter</button>
+  </p>
+    <p>
+    <button onclick="mklist()">make list</button>
+  </p>
+-->
+<!--
+les couleurs de l'arc-en-ciel sont : 
+<ul>
+{% for couleur in couleurs %}
+<li> {{ couleur }} </li>
+{% endfor %}
+</ul>
+
+-->
+
+Les couleurs de l'arc-en-ciel sont :
+<ul>
+{% for code, nom in couleurs.items %}
+<li style="color:#{{ code }}">{{ nom }}</li>
+{% endfor %}
+</ul>
+
+
+<!-- 
+Bonjour
+{% if sexe == "Femme" %}
+   Madame
+{% elif sexe == "Monsieur" %}
+   Monsieur2
+   {%else%}
+   WAZAAAA
+{% endif %} !
+--> 
+
+<!-- 
+
+	<!DOCTYPE html>
+<html>
+<body>
+
+</body>
+</html>
+
+<h1>Bienvenue sur mon blog</h1>
+<p>La date actuelle est : {{ current_date }}</p>
+-->

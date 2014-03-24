@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NTFY.it - Realtime REST API Notification Center in the Cloud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Notifications, Notification Center, Notification Service, Notification API, REST API, Cloud, Push, Realtime, NodeJS, PubNub"/>
+    <meta name="description" content="Realtime Notification Center in the Cloud. Add your own notifications through an easy-to-use REST API.">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+        #award {
+            float: right;
+            position: fixed;
+            right: 0;
+            top: 180px;
+            z-index: 99;
+        }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="http://use.typekit.com/rcs2ork.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-31859246-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+
+<body data-spy="scroll" data-offset="200">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#"><h1>NTFY.it</h1></a>
+            <ul class="nav nav-pills header-nav pull-right" id="navbar">
+                <li class="active"><a href="#start">Start</a></li>
+                <li><a href="#what">What?</a></li>
+                <li><a href="#how">How it works</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="shadow"></div>
+</div>
+
+<a href="http://www.cssdesignawards.com"><img src="css-design-award-nominee-duo3-vertical.png" alt="CSS Design Award Nomination" id="award" /></a>
+
+<div class="wrapper wrapper-hero" id="start">
+    <div class="container">
+        <div id="hero"><span>NTFY.it Demo: Yes, it even works with Twitter. Available as Chrome Extension.</span></div>
+    </div>
+    <div class="hero-content">
+        <h1 class="tk-gesta"><b>Realtime Notification Center</b> in the Cloud</h1>
+        <h2><span class="red">Add your own notifications</span> through an easy-to-use <b>REST API</b></h2>
+        <a data-toggle="modal" href="#invite" id="btnCTA">Request invite</a>
+        <h3>NTFY.it is in private bèta. Developers can get early acces by requesting an invite.</h3>
+    </div>
+</div>
+
+<div class="wrapper wrapper-blauw visible-desktop">
+    <h3>Thanks to PubNub, NodeJS, LESSCSS and Twitter Bootstrap</h3>
+</div>
+
+<div class="container content">
+    <div class="row-fluid">
+        <div class="span8 page">
+            <h1 id="what">What is NTFY.it?</h1>
+            <p>
+                NTFY.it is a <b>Notification Center</b> that is available as a <b>Google Chrome Extension</b>. It is feeded with notifications coming from various developers. That could be even you and your service/website!
+                All these data is stored in the <b>Cloud</b> so other extensions (i.e. mobile) may come very soon.
+            </p>
+            <h2>
+                Imagine all your notifications together in one place, accessible on multiple devices. <br />Wouldn’t that be awesome?
+            </h2>
+            <p>
+                By using our simple <b>REST API</b>, you are able to send notifications to specific users. It all happens in <b>real-time</b>, thanks to the amazing PubNub service.
+            </p>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span8 page">
+            <h1 id="how">How it works</h1>
+            <p class="note">
+                NOTE: NTFY.it is a private bèta. Developers can get early access by requesting an invite.
+            </p>
+            <p>
+                NTFY.it can be seperated into 2 parts: the developers part and the clients part.
+            </p>
+            <p>
+                The clients Notification Center is feeded by notifications coming from various developers.<br />
+                So there first need to be developers. That is why we currently only focus on the developers part.<br />
+                <b>NTFY.it is not yet available for clients only!</b>
+            </p>
+            <p>
+                After receiving an invite, you get a <b>developers key</b> and <b>2 client accounts</b>.
+            </p>
+            <p>
+                Developers can create <b>resources</b> which are able to send push notifications to clients.
+                Therefore the resource needs to be <b>added</b> to the clients account.
+            </p>
+            <p>
+                That is - in a few words - the idea behind the <b>NTFY.it API</b>. The full documentation is available after logging in as developer.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer class="row-fluid">
+    <div class="container">
+        <p class="span8">
+            &copy; NTFY.it. Copyright 2012 All rights reserved. <br />
+            Bachelor proof by Dennis Verjans in cooperation with Lessius University College Mechelen.
+        </p>
+        <ul class="pull-right">
+            <li><a href="mailto:hello@ntfy.it"><img src="img/footer-gmail.png" alt="Mail"></a></li>
+            <li><a href="http://www.twitter.com/dennisver"><img src="img/footer-twitter.png" alt="Twitter"></a></li>
+            <li><a href="http://be.linkedin.com/pub/dennis-verjans/4b/264/a78"><img src="img/footer-linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="http://dribbble.com/dennisver"><img src="img/footer-dribbble.png" alt="Dribbble"></a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Invite popup -->
+<div id="invite" class="modal fade">
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Request NTFY.it developer invite</h3>
+    </div>
+    <div class="modal-body">
+        <div class="alert alert-success" id="invite-alert">
+            <b>Thank you!</b> I'll send you a direct message on Twitter as soon as your invite is ready.
+        </div>
+        <div class="progress progress-striped active" id="invite-status">
+            <div class="bar" style="width: 50%;"></div>
+        </div>
+        <p>
+            <b>Thank you for your interests in NTFY.it!</b>
+        </p>
+        <p>
+            You can <b>request</b> an invite and stay up-to-date on the latest news <b>by following me</b> on Twitter.
+            I'll send you a direct message as soon as your invite is ready.
+        </p>
+        <div id="request">
+            <h4>Request an invite by following me on Twitter.</h4>
+            <a href="https://twitter.com/dennisver" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="true">Follow @dennisver</a>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap-transition.js"></script>
+<script src="assets/js/bootstrap-alert.js"></script>
+<script src="assets/js/bootstrap-modal.js"></script>
+<script src="assets/js/bootstrap-dropdown.js"></script>
+<script src="assets/js/bootstrap-scrollspy.js"></script>
+<script src="assets/js/bootstrap-tab.js"></script>
+<script src="assets/js/bootstrap-tooltip.js"></script>
+<script src="assets/js/bootstrap-popover.js"></script>
+<script src="assets/js/bootstrap-button.js"></script>
+<script src="assets/js/bootstrap-collapse.js"></script>
+<script src="assets/js/bootstrap-carousel.js"></script>
+<script src="assets/js/bootstrap-typeahead.js"></script>
+<script src="assets/js/scrollto.js"></script>
+<script>
+    /* $('.dropdown-menu').find('form').click(function (e) {
+     e.stopPropagation();
+     }); */
+    $('#navbar').scrollspy();
+</script>
+
+<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+<script type="text/javascript">
+    twttr.events.bind('follow', function(event) {
+        $("#invite-status").attr("class","progress progress-success");
+        $("#invite-status .bar").css({width: '100%'});
+        $("#invite-alert").fadeIn().show();
+        $.post("invite.php", { screenname: event.data.screen_name, twitterid: event.data.user_id } );
+    });
+</script>
+
+<script type="text/javascript" src="http://ntfy.it/clickheat/js/clickheat.js"></script><script type="text/javascript"><!--
+clickHeatSite = '';clickHeatGroup = encodeURIComponent(window.location.pathname+window.location.search);clickHeatServer = 'http://ntfy.it/clickheat/click.php';initClickHeat(); //-->
+</script>
+
+</body>
+</html>
