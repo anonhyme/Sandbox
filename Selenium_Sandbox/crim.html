@@ -1,0 +1,708 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-fr" lang="fr-fr" dir="ltr" >
+<head>  
+	<!-- The following JDOC Head tag loads all the header and meta information from your site config and content. -->
+	<base href="http://crim.ca/fr/centre-de-formation-et-transfert/formations/developper-avec-c-intermediaire" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="title" content="Développer avec C# - intermédiaire | CRIM" />
+	<meta name="description" content="Développer avec C# - intermédiaire" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Développer avec C# - intermédiaire | CRIM</title>
+	<link href="/templates/crim/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="http://crim.ca/fr/component/search/?Itemid=317&amp;id=262&amp;format=opensearch" rel="search" title="Valider CRIM" type="application/opensearchdescription+xml" />
+	<link rel="stylesheet" href="/plugins/editors/jckeditor/typography/typography2.php" type="text/css" />
+	<link rel="stylesheet" href="/components/com_rsform/assets/calendar/calendar.css" type="text/css" />
+	<link rel="stylesheet" href="/components/com_rsform/assets/css/front.css" type="text/css" />
+	<link rel="stylesheet" href="/media/mod_languages/css/template.css" type="text/css" />
+	<script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+	<script src="/media/system/js/core.js" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+	<script src="/components/com_rsform/assets/js/script.js" type="text/javascript"></script>
+
+	
+	<link href="//fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/templates/crim/css/flexslider.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/crim/css/jquery.fancybox.css" type="text/css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="/templates/crim/js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="/templates/crim/js/jquery.address-1.5.min.js" type="text/javascript"></script>
+	<script src="/templates/crim/js/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="/templates/crim/js/moment.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-335831-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+	</script>
+
+	<!-- sharing -->
+	<script type="text/javascript">
+	var addthis_config = { ui_language: "fr" } 
+	</script>
+	
+	<!-- The following line loads the template CSS file located in the template folder. -->
+	<link rel="stylesheet" href="/templates/crim/css/template.css" type="text/css" />
+
+	<!-- The following line loads the print CSS file located in the template folder. -->
+	<link rel="stylesheet" href="/templates/crim/css/print.css" type="text/css" media="print" />
+
+	<!-- The following line loads the template JavaScript file located in the template folder. It's blank by default. -->
+	<script type="text/javascript" src="/templates/crim/js/template.js"></script>
+</head>
+<body id="container1">
+	
+	<div id="header">
+		<div class="container">
+			<div id="logo">
+				<a href="/" title="CRIM">
+					<img src="/templates/crim/images/logo_fr.png" alt="CRIM" />
+				</a>
+				
+			</div>
+			
+			<div id="quickMenu">
+				<ul class="members unstyled">
+					<li>
+						<a class="loginPopupToggle" href="/">
+							Acc&egrave;s membres                                </a>
+						</li>
+						<li class="sep">|</li>
+						<li>
+							<a href="/fr/devenez-membre-du-crim">
+								Devenez membre                                </a>
+							</li>
+						</ul>
+						
+						<ul class="unstyled">
+							<li>
+								<a href="/">
+									Accueil                                </a>
+								</li>
+								<li class="sep">|</li>
+								<li>
+									<a href="/fr/contactez-nous">
+										Contactez-nous                                </a>
+									</li>						
+									<li class="sep">|</li>
+									<li>
+										<div class="mod-languages">
+
+											<ul class="lang-inline">
+												<li class="" dir="ltr">
+													<a href="/en/training-and-transfer-centre/trainings/developper-avec-c-intermediaire">
+														EN						</a>
+													</li>
+												</ul>
+
+											</div>
+
+										</li>
+									</ul>
+									<div class="block personLogin">
+										<div class="blockHeader"><h3>Accès membre</h3></div>
+										<div class="blockContent">
+											
+											<p>Zone réservée aux membres pour accédez à vos documents exclusifs. Entrez votre nom d'usager et votre mot de passe.</p>
+											
+											<form action="http://crim.ca/fr/centre-de-formation-et-transfert/formations/developper-avec-c-intermediaire" method="post">
+												<input type='text' name='crimusername' value='' placeholder="Nom d'utilisateur"/>
+												<input type='password' name='crimpassword' value='' placeholder="Mot de passe"/>
+												<!--<input type='hidden' name='option' value='com_content'>-->
+												<input type='hidden' name='crimaction' value='processlogin'/>
+												<input type='submit' name='submit' class="loginButton" value='>'/>
+											</form>
+											<br />
+											<p><a href="/fr/contactez-nous">Mot de passe oublié ?</a></p>
+										</div>
+									</div>
+
+									
+								</div>
+								
+								
+								
+								<div id="search">
+									
+									<form action="http://crim.ca/index.php" method="get" class="inline">
+										<input name="searchword" id="mod-search-searchword" class="inputbox20" type="text"value="Recherche..."  onblur="if (this.value=='') this.value='Recherche...';" onfocus="if (this.value=='Recherche...') this.value='';" />
+										<input type="image" value="MOD_SEARCH_SUBMIT_LABEL" class="button" src="http://crim.ca/templates/crim/images/buttons/search.gif" onclick="this.form.searchword.focus();"/>
+										<input type="hidden" name="option" value="com_elasticsearch" />
+									</form>
+								</div>			
+							</div>
+						</div>
+						<div id="menu">
+							<div class="container unstyled">
+								<!-- The class on the root UL tag was changed to match the Blueprint nav style -->
+								<ul class="">
+									<li class="item168"><a href="/fr/centre-de-recherche-informatique-de-montreal" >À propos du CRIM</a><div class="submenu"><h2>
+										&Agrave; Propos du CRIM</h2>
+										<div class="col4-set">
+											<div class="col-1">
+												<ul>
+													<li>
+														<a href="/fr/centre-de-recherche-informatique-de-montreal/historique">Historique</a></li>
+														<li>
+															<a href="/fr/centre-de-recherche-informatique-de-montreal/valeurs">Valeurs</a></li>
+															<li>
+																<a href="/fr/centre-de-recherche-informatique-de-montreal/mission">Mission et orientations strat&eacute;giques</a></li>
+																<li>
+																	<a href="/fr/centre-de-recherche-informatique-de-montreal/gestion-de-la-qualite">Gestion de la qualit&eacute;</a></li>
+																</ul>
+															</div>
+															<div class="col-2 col-separator">
+																<ul>
+																	<li>
+																		<h5>
+																			<a href="/fr/centre-de-recherche-informatique-de-montreal/organisation">Organisation</a></h5>
+																		</li>
+																		<li>
+																			<a href="/fr/centre-de-recherche-informatique-de-montreal/organisation/repertoire-des-employes-et-collaborateurs">Employ&eacute;s et collaborateurs</a></li>
+																			<li>
+																				<a href="/fr/centre-de-recherche-informatique-de-montreal/organisation/comite-de-direction">Comit&eacute; de direction</a></li>
+																				<li>
+																					<a href="/fr/centre-de-recherche-informatique-de-montreal/organisation/conseil-d-administration">Conseil d&#39;administration</a></li>
+																					<li>
+																						<a href="/fr/centre-de-recherche-informatique-de-montreal/organisation/conseil-scientifique">Conseil scientifique</a></li>
+																					</ul>
+																				</div>
+																				<div class="col-3 col-separator">
+																					<ul>
+																						<li>
+																							<a href="/fr/centre-de-recherche-informatique-de-montreal/partenaires">Partenaires</a></li>
+																							<li>
+																								<a href="/fr/centre-de-recherche-informatique-de-montreal/nos-clients">Clients</a></li>
+																								<li>
+																									<a href="/fr/devenez-membre-du-crim">Membres</a></li>
+																								</ul>
+																							</div>
+																							<div class="col-4 col-separator">
+																								<ul>
+																									<li>
+																										<a href="/fr/centre-de-recherche-informatique-de-montreal/prix-et-distinctions">Prix et distinctions</a></li>
+																										<li>
+																											<a href="/fr/relations-medias">Relations m&eacute;dias</a></li>
+																											<li>
+																												<a href="/fr/nouvelles">Nouvelles</a></li>
+																												<li>
+																													<a href="/fr/evenements">&Eacute;v&eacute;nements</a></li>
+																													<li>
+																														<a href="/fr/centre-de-recherche-informatique-de-montreal/carriere-au-crim">Carri&egrave;re</a></li>
+																													</ul>
+																												</div>
+																											</div>
+																										</div><li class="item171"><a href="/fr/centre-de-recherche-appliquee" >Centre de recherche appliquée</a><div class="submenu"><h2>
+																										Centre de recherche appliqu&eacute;e</h2>
+																										<p>
+																											Un des plus importants centres de recherche appliqu&eacute;e en TI au Qu&eacute;bec.</p>
+																											<div class="col4-set">
+																												<div class="col-1" style="width: 26.6%; height: 160px;">
+																													<ul>
+																														<li>
+																															<h5>
+																																<a href="/fr/centre-de-recherche-appliquee/equipes">&Eacute;quipes</a></h5>
+																															</li>
+																															<li>
+																																<a href="/fr/centre-de-recherche-appliquee/equipes/modelisation-et-developpement-logiciel-avance">Mod&eacute;lisation et d&eacute;veloppement logiciel avanc&eacute;</a></li>
+																																<li>
+																																	<a href="/fr/centre-de-recherche-appliquee/equipes/developpement-et-technologies-internet">D&eacute;veloppement et technologies Internet</a></li>
+																																	<li>
+																																		<a href="/fr/centre-de-recherche-appliquee/equipes/reconnaissance-de-la-parole">Reconnaissance de la parole</a></li>
+																																		<li>
+																																			<a href="/fr/centre-de-recherche-appliquee/equipes/vision-et-imagerie">Vision et imagerie</a></li>
+																																			<li>
+																																				<a href="/fr/centre-de-recherche-appliquee/repertoire-des-chercheurs">R&eacute;pertoire du personnel de recherche</a></li>
+																																			</ul>
+																																		</div>
+																																		<div class="col-2 col-separator" style="width: 20.78%; height: 158px;">
+																																			<ul>
+																																				<li>
+																																					<h5>
+																																						<a href="/fr/centre-de-recherche-appliquee/expertises">Expertises et technologies</a></h5>
+																																					</li>
+																																					<li>
+																																						<a href="/fr/centre-de-recherche-appliquee/expertises-et-technologies/inference-des-modeles-de-comportement-executables-des-systemes">Inf&eacute;rence de mod&egrave;les</a></li>
+																																						<li>
+																																							<a href="/fr/centre-de-recherche-appliquee/expertises-et-technologies/plateformes-open-source">Plateformes Open Source</a></li>
+																																							<li>
+																																								<a href="/fr/centre-de-recherche-appliquee/expertises-et-technologies/analytique-audio">Analytique audio</a></li>
+																																								<li>
+																																									<a href="/fr/centre-de-recherche-appliquee/expertises-et-technologies/indexation-d-images-ou-de-videos-a-partir-du-contenu">Indexation vid&eacute;o</a></li>
+																																								</ul>
+																																								<p class="alignRight">
+																																									<a class="cta" href="/fr/centre-de-recherche-appliquee/expertises-et-technologies">Liste compl&egrave;te</a></p>
+																																								</div>
+																																								<div class="col-3 col-separator" style="width: 14.56%; height: 160px;">
+																																									<ul>
+																																										<li>
+																																											<h5>
+																																												<a href="/fr/centre-de-recherche-appliquee/realisations">R&eacute;alisations</a></h5>
+																																											</li>
+																																											<li>
+																																												<a href="/fr/publications">Publications</a></li>
+																																												<li>
+																																													<a href="/fr/centre-de-recherche-appliquee/industries">Industries</a></li>
+																																												</ul>
+																																											</div>
+																																											<div class="col-4 col-separator" style="width: 16.67%; height: 160px;">
+																																												<ul>
+																																													<li>
+																																														<strong><a href="/fr/centre-de-recherche-appliquee/offre-de-services">Offre de service</a></strong></li>
+																																														<li>
+																																															<a href="/fr/centre-de-recherche-appliquee/partenaires-du-centre-de-recherche-appliquee">Partenaires</a></li>
+																																															<li>
+																																																<a href="/fr/centre-de-recherche-appliquee/clients-du-centre-de-recherche-appliquee">Clients</a></li>
+																																															</ul>
+																																														</div>
+																																													</div>
+																																												</div><li class="selected item173"><a href="/fr/centre-de-formation-et-transfert" >Formation et transfert</a><div class="submenu"><h2>
+																																												Centre de formation et de transfert</h2>
+																																												<p>
+																																													Pour accro&icirc;tre votre performance ou celle de votre organisation, le CRIM vous offre tout un &eacute;ventail de formations de pointe.</p>
+																																													<div class="col4-set">
+																																														<div class="col-1">
+																																															<ul>
+																																																<li>
+																																																	<a href="/fr/centre-de-formation-et-transfert/dirigeants">Formation pour dirigeants</a></li>
+																																																	<li>
+																																																		<a href="/fr/centre-de-formation-et-transfert/professionnels-en-ti">Formations pour professionnels TI</a></li>
+																																																		<li>
+																																																			<a href="/fr/centre-de-formation-et-transfert/responsables-et-conseillers-en-formation">Responsables et conseillers<br />
+																																																				en formation</a></li>
+																																																			</ul>
+																																																		</div>
+																																																		<div class="col-2 col-separator">
+																																																			<ul>
+																																																				<li>
+																																																					<a href="/fr/centre-de-formation-et-transfert/formations">Liste des formations</a></li>
+																																																					<li>
+																																																						<a href="/fr/centre-de-formation-et-transfert/liste-des-certifications-et-des-parcours-d-expert">Certifications et parcours d&#39;expert</a></li>
+																																																						<li>
+																																																							<a href="/fr/centre-de-formation-et-transfert/formation-sur-mesure">Formation sur mesure</a></li>
+																																																						</ul>
+																																																					</div>
+																																																					<div class="col-3 col-separator">
+																																																						<ul>
+																																																							<li>
+																																																								<a href="/fr/centre-de-formation-et-transfert/repertoire-des-formateurs">R&eacute;pertoire des formateurs</a></li>
+																																																								<li>
+																																																									<a href="/fr/centre-de-formation-et-transfert/partenaires-du-centre-de-formation-et-de-transfert">Partenaires</a></li>
+																																																									<li>
+																																																										<a href="/fr/faire-affaire-avec-le-crim/nos-locaux">Aper&ccedil;u de nos locaux</a></li>
+																																																									</ul>
+																																																								</div>
+																																																								<div class="col-4 col-separator">
+																																																									<ul>
+																																																										<li>
+																																																											<a href="/fr/centre-de-formation-et-transfert/promotions">Promotions</a></li>
+																																																											<li>
+																																																												<a href="/fr/politique-d-inscription-et-d-annulation" target="_self">Politique d&#39;inscription et d&#39;annulation</a></li>
+																																																											</ul>
+																																																										</div>
+																																																									</div>
+																																																								</div><li class="item175"><a href="/fr/centre-de-tests-et-interoperabilite" >Centre de tests et d'interopérabilité</a><div class="submenu"><h2>
+																																																								Centre de tests et d&#39;interoperabilit&eacute;</h2>
+																																																								<p>
+																																																									La r&eacute;f&eacute;rence&nbsp;neutre&nbsp;en mati&egrave;re de meilleures pratiques de tests au Qu&eacute;bec.</p>
+																																																									<div class="col4-set">
+																																																										<div class="col-1" style="width: 44.98%; height: 105px;">
+																																																											<ul>
+																																																												<li>
+																																																													<a href="/fr/centre-de-tests-et-interoperabilite/services-aux-acheteurs">Services aux acheteurs et utilisateurs de logiciels</a></li>
+																																																													<li>
+																																																														<a href="/fr/centre-de-tests-et-interoperabilite/services-pour-developpeurs">Services aux d&eacute;veloppeurs et int&eacute;grateurs de logiciels</a></li>
+																																																														<li>
+																																																															<a href="/fr/centre-de-tests-et-interoperabilite/services-pour-le-secteur-de-la-sante">Services pour le secteur de la sant&eacute;</a></li>
+																																																															<li>
+																																																																<a href="/fr/centre-de-tests-et-interoperabilite/certifications">Certifications de logiciels</a></li>
+																																																															</ul>
+																																																														</div>
+																																																														<div class="col-2 col-separator" style="width: 14.92%; height: 105px;">
+																																																															<ul>
+																																																																<li>
+																																																																	<a href="/fr/centre-de-tests-et-interoperabilite/expertises">Expertises</a></li>
+																																																																	<li>
+																																																																		<a href="/fr/centre-de-tests-et-interoperabilite/realisations">R&eacute;alisations</a></li>
+																																																																		<li>
+																																																																			<a href="/fr/centre-de-tests-et-interoperabilite/laboratoire-agile">LaboAgile</a></li>
+																																																																		</ul>
+																																																																	</div>
+																																																																	<div class="col-3 col-separator">
+																																																																		<ul>
+																																																																			<li>
+																																																																				<a href="/fr/centre-de-tests-et-interoperabilite/equipe">R&eacute;pertoire de l&#39;&eacute;quipe</a></li>
+																																																																				<li>
+																																																																					<a href="/fr/centre-de-tests-et-interoperabilite/partenaires">Partenaires</a></li>
+																																																																					<li>
+																																																																						<a href="/fr/centre-de-tests-et-interoperabilite/clients">Clients</a></li>
+																																																																					</ul>
+																																																																				</div>
+																																																																			</div>
+																																																																		</div><li class="item369"><a href="/fr/faire-affaire-avec-le-crim" >Faire affaire avec le CRIM</a><div class="submenu"><h2>
+																																																																		Faire affaire avec le CRIM</h2>
+																																																																		<div class="col4-set">
+																																																																			<div class="col-1">
+																																																																				<ul>
+																																																																					<li>
+																																																																						<a href="/fr/faire-affaire-avec-le-crim/aide-au-financement">Financement</a></li>
+																																																																						<li>
+																																																																							<a href="/fr/faire-affaire-avec-le-crim/transfert-technologique">Transfert technologique</a></li>
+																																																																						</ul>
+																																																																					</div>
+																																																																					<div class="col-2 col-separator">
+																																																																						<ul>
+																																																																							<li>
+																																																																								<a href="/fr/faire-affaire-avec-le-crim/location-de-salle">Location de salles</a></li>
+																																																																								<li>
+																																																																									<a href="/fr/faire-affaire-avec-le-crim/nos-locaux">Aper&ccedil;u de nos locaux</a></li>
+																																																																								</ul>
+																																																																							</div>
+																																																																							<div class="col-4">
+																																																																								&nbsp;</div>
+																																																																							</div>
+																																																																						</div></ul>
+
+																																																																						<div class="clear"></div>
+																																																																					</div>
+																																																																				</div>
+																																																																				
+																																																																				<div id="content">
+																																																																					<div id="centerCFT" class="container">
+																																																																						
+																																																																						<div class="breadcrumbs">
+																																																																							<a href="/fr/" class="pathway">Accueil</a> &gt; <a href="/fr/centre-de-formation-et-transfert" class="pathway">Formation et transfert</a> &gt; <a href="/fr/centre-de-formation-et-transfert/formations" class="pathway">Formations</a> &gt; <span>Développer avec C# - intermédiaire</span></div>
+
+																																																																							
+																																																																							<div class="inside">
+																																																																								<div class="centerName">
+																																																																									<h5>Centre de formation et de transfert</h5>
+																																																																								</div>
+																																																																								<div class="heading">
+																																																																									<h1 class="title">
+																																																																										NET282 - Développer avec C# - intermédiaire				 <img src="http://crim.ca//media/misc/certificate.png"/> 		 <img src="http://crim.ca//media/misc/promotion.png"/>            	
+																																																																									</h1>
+																																																																									<div class="sharing">
+																																																																										<div class="floatLeft">
+																																																																											<strong>Partagez :</strong>
+																																																																											
+																																																																											<a class="addthis_button_linkedin">
+																																																																												<span class="icon linkedin"></span>
+																																																																											</a>
+																																																																											<a class="addthis_button_facebook">
+																																																																												<span class="icon facebook"></span>
+																																																																											</a>
+																																																																											<a class="addthis_button_twitter">
+																																																																												<span class="icon twitter"></span>
+																																																																											</a>
+																																																																										</div>
+																																																																										<div class="floatRight">
+																																																																											<a class="addthis_button_email">
+																																																																												<span class="icon email"></span>
+																																																																											</a>
+																																																																											<a href="javascript:print();">
+																																																																												<span class="icon print"></span>
+																																																																											</a>
+																																																																										</div>
+																																																																									</div></div>
+																																																																									<div id="contentLeft">
+																																																																										<div id="training">
+																																																																											
+																																																																											<div class="quickInfo">
+																																																																												<span class="duration"><strong>Dur&eacute;e :</strong> 12&nbsp;h</span>
+																																																																												<span class="memberCost"><strong>Coût membre :</strong> 680 $</span>
+																																																																												<span class="nonMemberCost"><strong>Coût non membre :</strong> 825 $</span>
+																																																																											</div>
+																																																																											<div class="icons">                    
+																																																																												
+																																																																											</div>
+																																																																											<p>
+																																																																												
+																																																																												<strong>Cible :</strong> 
+																																																																												Professionnels TI                        <br />
+																																																																												<strong>Langue de la formation :</strong> Fran&ccedil;ais                            <br />
+																																																																												<strong>Domaine :</strong> Architecture, développement et tests                        
+																																																																												<br />
+																																																																												<strong>Sujet :</strong>
+																																																																												Développement logiciel            		</p>
+																																																																												
+																																																																												<div class="content">
+																																																																													<p>Le C# est un langage de programmation orient&eacute; objet en constante &eacute;volution. Il est moderne, simple et facile d&rsquo;apprentissage. Apprendre le C# et .NET, c&rsquo;est ouvrir la porte &agrave; l&rsquo;utilisation d'une panoplie de technologies et de plateformes Microsoft tr&egrave;s utilis&eacute;es sur le march&eacute; du travail. Au cours de cette formation, vous serez introduit au langage C# et &agrave; sa syntaxe par des exemples et des exercices pratiques qui vous permettront de bien consolider les apprentissages. Vous pourrez &eacute;galement vous familiariser avec les bonnes pratiques et les outils &agrave; utiliser lorsque vous programmez en C#. <br />
+																																																																													</p>
+																																																																													<p><strong>Pr&eacute;alable&nbsp; <br />
+																																																																													</strong></p>
+																																																																													<ul>
+																																																																														<li><em>Concepts de l&rsquo;orient&eacute; objet</em> (DEV019) et connaissance d&rsquo;un langage orient&eacute; objet </li>
+																																																																													</ul>		</div>
+																																																																													
+																																																																													<p>
+																																																																														<a href="http://crim.ca//media/training-pdf-files/crim_net282_developpercintermediaire_1213.pdf" class="ctaBold">Télécharger le PDF</a>
+																																																																													</p>
+																																																																													
+																																																																													
+																																																																													<div class="certififactions">
+																																																																														<div class="media"><img src="http://crim.ca//media/misc/certificate.png"/></div>
+																																																																														<div class="info">
+																																																																															<h2>Certifications et Parcours d’expert</h2>
+																																																																															<div class="content">
+																																																																																Cette formation fait également partie d'un parcours d'expert ou d'une certification.                </div>
+																																																																																<ul>
+																																																																																	<li><a href="/fr/centre-de-formation-et-transfert/liste-des-certifications-et-des-parcours-d-expert/developpement-infonuagique-avec-microsoft-azure" class="cta">Développement infonuagique avec Microsoft Azure</a></li>
+																																																																																	<li><a href="/fr/centre-de-formation-et-transfert/liste-des-certifications-et-des-parcours-d-expert/developpement-systeme-net" class="cta">Développement système .NET</a></li>
+																																																																																	<li><a href="/fr/centre-de-formation-et-transfert/liste-des-certifications-et-des-parcours-d-expert/programmation-c-1" class="cta">Programmation C#</a></li>
+																																																																																</ul>
+																																																																															</div>
+																																																																														</div>
+																																																																														
+																																																																														
+																																																																														
+																																																																														<a name="dates"></a>
+																																																																														<table id="trainingList">
+																																																																															<thead>
+																																																																																<tr>
+																																																																																	<th>Date</th>
+																																																																																	<th>Temps</th>
+																																																																																	<th>Lieu</th>
+																																																																																	<th>Ajoutez au panier</th>
+																																																																																</tr>
+																																																																															</thead>
+																																																																															<tbody>
+																																																																																<tr>
+																																																																																	<td>Du 19 au 20 juin 2014</td>
+																																																																																	<td>De 9 h 00 à 16 h 30</td>
+																																																																																	<td>Montréal (Métro Parc)</td>
+																																																																																	<td><a href="/fr/carts?option=com_carts&task=addtocart&subtraining=899" class="ctaBold addToCart">ajoutez</a></td>
+																																																																																</tr>
+																																																																															</tbody>
+																																																																														</table>
+																																																																														
+																																																																														
+																																																																														
+																																																																														<script type="text/javascript">
+																																																																														new TrainingButtons('.addToCart', '#trainingList', '#cart');
+																																																																														</script>            
+
+																																																																														
+																																																																														<div class="custom">
+																																																																															<h2>Formation sur mesure</h2>
+																																																																															
+																																																																															<div class="content">
+																																																																																<p>
+																																																																																	Une formation en particulier vous intéresse mais vous souhaiteriez l'adapter à un besoin spécifique de votre organisation ? Nous pouvons vous proposer une formation sur mesure qui répondra à vos attentes.				</p>
+																																																																																</div>
+																																																																																
+																																																																																<p>
+																																																																																	<a href="/fr/centre-de-formation-et-transfert/formation-sur-mesure" class="cta">Plus d'info</a> 
+																																																																																	<a href="/fr/centre-de-formation-et-transfert/formation-sur-mesure/demande-de-formation-sur-mesure" class="cta">Formulez une demande</a>
+																																																																																</p>
+																																																																															</div>
+																																																																															
+																																																																															
+																																																																															<h2>Formateurs</h2>
+																																																																															
+																																																																															<div class="trainers">
+																																																																																<div class="item researcher">
+																																																																																	<div class="media">
+																																																																																		<img src="/phpThumb/phpThumb.php?src=/media/biography/27.jpg&w=100&h=100" alt="Érik Cusson" />
+																																																																																		<div class="title">
+																																																																																			<a href="/fr/centre-de-formation-et-transfert/repertoire-des-formateurs/erik-cusson">Érik Cusson</a>
+																																																																																			Formateur                        </div>
+																																																																																		</div>
+																																																																																	</div>
+																																																																																	<div class="item researcher">
+																																																																																		<div class="media">
+																																																																																			<img src="/phpThumb/phpThumb.php?src=/media/biography/32.jpg&w=100&h=100" alt="Pascal Laurin" />
+																																																																																			<div class="title">
+																																																																																				<a href="/fr/centre-de-formation-et-transfert/repertoire-des-formateurs/pascal-laurin">Pascal Laurin</a>
+																																																																																				Formateur                        </div>
+																																																																																			</div>
+																																																																																		</div>
+																																																																																	</div>
+																																																																																	
+
+																																																																																	<h2>Partenaires</h2>
+																																																																																	<div class="list">
+																																																																																		<div class="item">
+																																																																																			<div class="media">
+																																																																																				<img src="/phpThumb/phpThumb.php?src=/media/partners/qtc.jpg&w=100&h=100" alt="Quali-T-Conseil inc." />
+																																																																																			</div>
+																																																																																			<div class="info">
+																																																																																				<h3>Quali-T-Conseil inc.</h3>
+																																																																																				<div class="excerpt">
+																																																																																					<p>Quali-T-Conseil se spécialise dans le service-conseil en Assurance Qualité. QTC est en mesure d'appuyer votre personnel et de vous aider dans l'évaluation, la définition et la mise en place d'un programme qualité pour votre entreprise permettant d'atteindre vos objectifs d'affaires.</p>						</div>
+																																																																																					<a href="http://www.quali-t-conseil.com/" class="cta" target="_blank">Visitez le site</a>
+																																																																																				</div>
+																																																																																			</div>
+																																																																																		</div>
+																																																																																		
+																																																																																		<a href="/fr/politique-d-inscription-et-d-annulation" class="ctaWhite">Voir nos politiques d'annulation</a>
+																																																																																	</div>
+																																																																																</div>
+																																																																																<div id="contentRight">
+																																																																																	<div id="cart" class="block2">
+
+																																																																																		<div class="blockContent">
+																																																																																			<h3>Panier</h3>
+																																																																																			
+																																																																																			<p>
+																																																																																				<strong>Votre panier d'activité est vide :</strong>
+																																																																																				Appuyez sur &quot;Ajouter au panier&quot; pour le remplir.        		</p>
+																																																																																			</div>
+
+																																																																																			
+																																																																																			<div class="alignRight">
+																																																																																				<a href="/fr/mon-panier-d-achats" class="ctaBold">Voir le panier</a>
+																																																																																			</div>
+																																																																																		</div><div class="block2 followUsSidebar simpleBlock">
+																																																																																		<div class="blockContent">
+																																																																																			<h3>Suivez-nous</h3>
+
+																																																																																			<p><a href="http://www.facebook.com/pages/CRIM/419393221455592" target='_blank'><span class="icon facebook">Facebook</span></a> <a href="http://www.facebook.com/pages/CRIM/419393221455592" target='_blank'>Dialoguez avec nous</a></p>
+																																																																																			<p><a href="http://www.linkedin.com/company/crim" target='_blank'><span class="icon linkedin">LinkedIn</span></a> <a href="http://www.linkedin.com/company/crim" target='_blank'>Suivez le CRIM</a></p>
+																																																																																			<p><a href="https://twitter.com/CRIM_ca" target='_blank'><span class="icon twitter">Twitter</span></a> <a href="https://twitter.com/CRIM_ca" target='_blank'>Suivez nos Tweets</a></p>
+																																																																																			<p><a href="http://www.flickr.com/photos/crim_mtl/" target='_blank'><span class="icon flickr">Flickr</span></a> <a href="http://www.flickr.com/photos/crim_mtl/" target='_blank'>Voyez nos albums Flickr</a></p>
+																																																																																			<p><a href="http://www.youtube.com/user/wwwCRIMca" target='_blank'><span class="icon youtube">YouTube</span></a> <a href="http://www.youtube.com/user/wwwCRIMca" target='_blank'>Voyez nos vidéos</a></p>
+																																																																																		</div>
+																																																																																	</div><div class="block recentNews">
+																																																																																	<h3>Nouvelles récentes</h3>
+																																																																																	<div class="blockContent">
+																																																																																		<ul>
+																																																																																			<li>
+																																																																																				<h5>Nouveau projet tripartite</h5>
+																																																																																				<span class="date">
+																																																																																					20/03/2014				</span>
+																																																																																					<p>Un projet alliant un partenaire industriel, un partenaire universitaire et le CRIM vient d'être signé!</p>
+																																																																																					<div class="alignRight">
+																																																																																						<a href="/fr/nouvelles/nouveau-projet-tripartite" class="ctaBold">+</a>
+																																																																																					</div>
+																																																																																				</li>	
+																																																																																			</ul>
+																																																																																		</div>
+																																																																																		<div class="alignRight">
+																																																																																			<a href="/fr/nouvelles" class="cta">Voir toutes les nouvelles</a>	
+																																																																																		</div>
+																																																																																	</div><div class="block twitterFeed simple">
+																																																																																	<div class="content">
+																																																																																		<ul>
+																																																																																			<li class="first"><a href="https://twitter.com/cefrio" target="_blank" rel="nofollow">CEFRIO</a> RT @cefrio: Usages des tech #mobiles et leur potentiel en #construction au Qc d&eacute;crypt&eacute;s ds ce nouveau rapport : <a href="http://t.co/8Nrl1rZ6jA" target="_blank">http://t.co/8Nrl1rZ6jA</a></li><li ><a href="https://twitter.com/thot" target="_blank" rel="nofollow">Thot - Cursus</a> RT @thot: Voici des #Tutoriels pour d&eacute;buter avec #SketchUp <a href="http://t.co/U9jScNjuKf" target="_blank">http://t.co/U9jScNjuKf</a></li>        </ul>
+																																																																																			<div class="follow">
+																																																																																				<a href="http://twitter.com/crim_ca" class="cta" target="_blank">Suivez-nous</a>
+																																																																																			</div>	
+																																																																																		</div>
+																																																																																	</div>
+																																																																																</div>
+																																																																																<div class="clear"></div>
+																																																																															</div>
+																																																																														</div>
+																																																																													</div>
+																																																																													
+																																																																													<div id="bottom">
+																																																																														<div class="container">
+																																																																															<div class="inside">
+																																																																																<div class="col2-set">
+																																																																																	<div class="col-1 newsletter">
+																																																																																		<div class="simpleBlock">
+																																																																																			<h5>
+																																																																																				S&#39;inscrire &agrave; notre infolettre <a class="ctaArrow" href="http://crim.gi2.ca/bulletin"><img alt="S'inscrire à notre infolettre" src="/templates/crim/images/icons/arrowCtaBold.png" /></a></h5>
+																																																																																				<p>
+																																																																																					<span id="newsletter_module">Voir nos&nbsp;<a href="/fr/infolettres">infolettres r&eacute;centes</a></span></p>
+																																																																																				</div>
+																																																																																			</div>
+																																																																																			<div class="col-2 sharing">
+																																																																																				<h5>Suivez-nous sur :</h5>
+																																																																																				<a href="http://www.facebook.com/pages/CRIM/419393221455592" target='_blank'><span class="icon facebook">Facebook</span></a>
+																																																																																				<a href="http://www.linkedin.com/company/crim" target='_blank'><span class="icon linkedin">LinkedIn</span></a>
+																																																																																				<a href="https://twitter.com/CRIM_ca" target='_blank'><span class="icon twitter">Twitter</span></a>
+																																																																																				<a href="http://www.flickr.com/photos/crim_mtl/" target='_blank'><span class="icon flickr">Flickr</span></a>
+																																																																																				<a href="http://www.youtube.com/user/wwwCRIMca" target='_blank'><span class="icon youtube">YouTube</span></a>
+
+																																																																																			</div>
+																																																																																		</div>
+																																																																																	</div>
+																																																																																</div>
+																																																																															</div>
+																																																																															
+																																																																															<div id="footer">
+																																																																																<div class="container">
+																																																																																	<div class="inside">
+																																																																																		<div id="footerMenu">
+																																																																																			<div class="menuContainer">
+																																																																																				
+																																																																																				<ul class="menu">
+																																																																																					<li class="item-223 deeper parent"><a href="/fr/centre-de-recherche-informatique-de-montreal" >CRIM</a><ul><li class="item-227"><a href="/fr/centre-de-recherche-informatique-de-montreal/historique" >Historique</a></li><li class="item-225"><a href="/fr/centre-de-recherche-informatique-de-montreal/valeurs" >Valeurs</a></li><li class="item-228"><a href="/fr/centre-de-recherche-informatique-de-montreal/mission" >Mission et orientations stratégiques</a></li><li class="item-229"><a href="/fr/centre-de-recherche-informatique-de-montreal/gestion-de-la-qualite" >Gestion de qualité</a></li><li class="item-230"><a href="/fr/centre-de-recherche-informatique-de-montreal/organisation" >Organisation</a></li><li class="item-231"><a href="/fr/centre-de-recherche-informatique-de-montreal/partenaires" >Nos partenaires</a></li></ul></li></ul>
+																																																																																					<div class="simpleBlock">
+																																																																																						<p>
+																																																																																							<a href="http://www.mesrst.gouv.qc.ca/" target="_blank"><img alt="Ministère de l'Enseignement supérieur, de la Recherche, de la Science et de la Technologie" src="/images/partenaireQuebec.jpg" /></a></p>
+																																																																																						</div>	
+																																																																																					</div>
+																																																																																					<div class="menuContainer">
+																																																																																						
+																																																																																						<ul class="menu">
+																																																																																							<li class="item-208 deeper parent"><a href="/fr/centre-de-recherche-appliquee" >Centre de recherche appliquée</a><ul><li class="item-209 deeper parent"><a href="/fr/centre-de-recherche-appliquee/equipes" >Équipes</a><ul><li class="item-210"><a href="/fr/centre-de-recherche-appliquee/equipes/modelisation-et-developpement-logiciel-avance" >Modélisation et développement logiciel avancé</a></li><li class="item-211"><a href="/fr/centre-de-recherche-appliquee/equipes/developpement-et-technologies-internet" >Développement et technologies Internet</a></li><li class="item-212"><a href="/fr/centre-de-recherche-appliquee/equipes/reconnaissance-de-la-parole" >Reconnaissance de la parole</a></li><li class="item-213"><a href="/fr/centre-de-recherche-appliquee/equipes/vision-et-imagerie" >Vision et imagerie</a></li></ul></li><li class="item-216"><a href="/fr/centre-de-recherche-appliquee/industries" >Industries</a></li><li class="item-217"><a href="/fr/centre-de-recherche-appliquee/expertises-et-technologies" >Expertises</a></li><li class="item-218"><a href="/fr/centre-de-recherche-appliquee/realisations" >Réalisations</a></li><li class="item-710"><a href="/fr/centre-de-recherche-appliquee/offre-de-services" >Offre de services</a></li></ul></li></ul>
+																																																																																							
+																																																																																						</div>
+																																																																																						<div class="menuContainer">
+																																																																																							
+																																																																																							<ul class="menu">
+																																																																																								<li class="item-238 alias-parent-active deeper parent"><a href="/fr/centre-de-formation-et-transfert" >Centre de formation et transfert</a><ul><li class="item-239 active"><a href="/fr/centre-de-formation-et-transfert/formations" >Formations</a></li><li class="item-241"><a href="/fr/centre-de-formation-et-transfert/liste-des-certifications-et-des-parcours-d-expert" >Certifications et parcours d’expert </a></li><li class="item-242"><a href="/fr/centre-de-formation-et-transfert/repertoire-des-formateurs" >Formateurs</a></li><li class="item-243"><a href="/fr/centre-de-formation-et-transfert/promotions" >Promotions</a></li></ul></li></ul>
+																																																																																								
+																																																																																							</div>
+																																																																																							<div class="menuContainer">
+																																																																																								
+																																																																																								<ul class="menu">
+																																																																																									<li class="item-251 deeper parent"><a href="/fr/centre-de-tests-et-interoperabilite" >Centre de tests et d'interopérabilité</a><ul><li class="item-252"><a href="/fr/centre-de-tests-et-interoperabilite/services-aux-acheteurs" >Services aux acheteurs et utilisateurs de logiciels</a></li><li class="item-699"><a href="/fr/centre-de-tests-et-interoperabilite/services-pour-developpeurs" >Services aux développeurs et intégrateurs de logiciels</a></li><li class="item-253"><a href="/fr/centre-de-tests-et-interoperabilite/services-pour-le-secteur-de-la-sante" >Services pour le secteur de la santé</a></li><li class="item-254"><a href="/fr/centre-de-tests-et-interoperabilite/expertises" >Expertises</a></li><li class="item-256"><a href="/fr/centre-de-tests-et-interoperabilite/realisations" >Réalisations</a></li><li class="item-255"><a href="/fr/centre-de-tests-et-interoperabilite/certifications" >Certifications de logiciels</a></li><li class="item-631"><a href="/fr/centre-de-tests-et-interoperabilite/laboratoire-agile" >LaboAgile</a></li></ul></li></ul>
+																																																																																									
+																																																																																									<ul class="menu">
+																																																																																										<li class="item-264 deeper parent"><a href="/fr/devenez-membre-du-crim" >Devenez membre</a><ul><li class="item-265"><a href="/fr/devenez-membre-du-crim/avantages" title="Avantages de devenir membre | CRIM" >Avantages</a></li><li class="item-267"><a href="/fr/devenez-membre-du-crim/couts" >Coûts</a></li><li class="item-268"><a href="/fr/devenez-membre-du-crim/liste-des-membres" >Liste des membres</a></li><li class="item-724"><a href="/fr/devenez-membre-du-crim/bienvenue-amis-de-l-aqt" >Bienvenue amis de l'AQT</a></li><li class="item-725"><a href="/fr/devenez-membre-du-crim/venez-tester-notre-centre-de-tests" >Venez tester notre Centre de tests</a></li></ul></li></ul>
+																																																																																										
+																																																																																									</div>
+																																																																																									<div class="menuContainer">
+																																																																																										
+																																																																																										<ul class="menu">
+																																																																																											<li class="item-276"><a href="/fr/publications" >Publications</a></li><li class="item-277"><a href="/fr/evenements" >Événements</a></li><li class="item-278"><a href="/fr/nouvelles" >Nouvelles</a></li><li class="item-279"><a href="/fr/centre-de-recherche-informatique-de-montreal/carriere-au-crim" >Carrière</a></li><li class="item-280"><a href="/fr/faire-affaire-avec-le-crim/location-de-salle" >Location de salles</a></li><li class="item-281"><a href="/fr/faire-affaire-avec-le-crim/aide-au-financement" >Aide au financement</a></li><li class="item-282"><a href="/fr/faire-affaire-avec-le-crim/transfert-technologique" >Transferts technologiques</a></li></ul>
+																																																																																											
+																																																																																											<ul class="menu">
+																																																																																												<li class="item-287"><a href="/fr/relations-medias" >Relations médias</a></li><li class="item-288"><a href="/fr/conditions-d-utilisation" >Conditions d'utilisation</a></li><li class="item-289"><a href="/fr/politique-de-la-vie-privee" >Politique de la vie privée</a></li><li class="item-290"><a href="/fr/carte-du-site" >Carte du site</a></li></ul>
+																																																																																												
+																																																																																											</div>
+																																																																																										</div>
+																																																																																										<div id="copyright">
+																																																																																											&copy; 2014 CRIM. Tous drois réservés.                        </div>
+																																																																																										</div>
+																																																																																									</div>
+																																																																																								</div>
+																																																																																								<!-- add this sharing -->
+																																																																																								<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-506ee7dd14d95993"></script>
+																																																																																								
+																																																																																								
+																																																																																								<!-- retargeting code -->
+																																																																																								<script type="text/javascript">
+																																																																																								adroll_adv_id = "Y4SF7DAUHJETDLAIA3ILQD";
+																																																																																								adroll_pix_id = "NZRP2TOZH5HU5IFTT4FXX5";
+																																																																																								(function () {
+																																																																																									var oldonload = window.onload;
+																																																																																									window.onload = function(){
+																																																																																										__adroll_loaded=true;
+																																																																																										var scr = document.createElement("script");
+																																																																																										var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+																																																																																										scr.setAttribute('async', 'true');
+																																																																																										scr.type = "text/javascript";
+																																																																																										scr.src = host + "/j/roundtrip.js";
+																																																																																										((document.getElementsByTagName('head') || [null])[0] ||
+																																																																																											document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+																																																																																										if(oldonload){oldonload()}};
+																																																																																									}());
+</script>
+
+</body>
+</html>
