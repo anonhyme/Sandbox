@@ -61,9 +61,6 @@ Selenium.prototype.doLoadXmlVars = function(filepath, selector)
     Selenium.prototype.doLoadXmlVars(filepath, selector);
   };
 
-
-
-
   function loadVars(reader, desc, filepath, selector)
   {
     if (selector) {
@@ -93,8 +90,6 @@ Selenium.prototype.doLoadXmlVars = function(filepath, selector)
         + "; in input file " + filepath);
     }
   }
-
-
 
   function XmlReader()
   {
